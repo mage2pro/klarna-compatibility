@@ -1,5 +1,5 @@
-The module makes the [official Klarna payment module for Magento 2](https://docs.magento.com/m2/ce/user_guide/payment/klarna.html) compatible with third-part modules.  
-Currently supported 3 modules of **aheadWorks**:
+The module makes the [official Klarna payment module for Magento 2](https://docs.magento.com/m2/ce/user_guide/payment/klarna.html) compatible with third-party modules.  
+Currently the module solves compatibility problems with 3 modules of **aheadWorks**:
 - [Gift Card](https://ecommerce.aheadworks.com/magento-2-extensions/gift-card)
 - [Reward Points](https://ecommerce.aheadworks.com/magento-2-extensions/points-and-rewards)
 - [Store Credit and Refund](https://ecommerce.aheadworks.com/magento-2-extensions/store-credit)
