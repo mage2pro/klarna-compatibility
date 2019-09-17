@@ -4,9 +4,6 @@ Currently supported 3 modules of **aheadWorks**:
 - [Reward Points](https://ecommerce.aheadworks.com/magento-2-extensions/points-and-rewards)
 - [Store Credit and Refund](https://ecommerce.aheadworks.com/magento-2-extensions/store-credit)
 
-## How to buy
-You can buy it with PayPal [here](https://mage2.pro/t/6009).  
-
 ## How to install
 ```
 bin/magento maintenance:enable
