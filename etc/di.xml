@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
+>
+	<virtualType name='Dfe\KlarnaC\OL\AheadWorks\CustomerBalance' type='Dfe\KlarnaC\OL'>
+		<arguments>
+			<argument name='id' xsi:type='string'>aw_store_credit</argument>
+			<argument name='type' xsi:type='const'
+			>Klarna\Core\Model\Checkout\Orderline\Customerbalance::ITEM_TYPE_CUSTOMERBALANCE</argument>
+		</arguments>
+	</virtualType>
+	<virtualType name='Dfe\KlarnaC\OL\AheadWorks\GiftCard' type='Dfe\KlarnaC\OL'>
+		<arguments>
+			<argument name='id' xsi:type='string'>aw_giftcard</argument>
+			<argument name='type' xsi:type='const'
+			>Klarna\Core\Model\Checkout\Orderline\Giftcard::ITEM_TYPE_GIFTCARD</argument>
+		</arguments>
+	</virtualType>
+	<virtualType name='Dfe\KlarnaC\OL\AheadWorks\Reward' type='Dfe\KlarnaC\OL'>
+		<arguments>
+			<argument name='id' xsi:type='string'>aw_reward_points</argument>
+			<argument name='type' xsi:type='const'
+			>Klarna\Core\Model\Checkout\Orderline\Reward::ITEM_TYPE_REWARD</argument>
+		</arguments>
+	</virtualType>
+</config>

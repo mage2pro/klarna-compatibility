@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/klarna-compatibility"
-	,"version": "0.0.1"
+	,"version": "1.0.0"
 	,"description": "The module makes the official Klarna payment module for Magento 2 compatible with third-party modules"
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro/c/extensions/klarna-compatibility"

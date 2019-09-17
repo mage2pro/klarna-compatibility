@@ -8,20 +8,16 @@ use Klarna\Core\Model\Checkout\Orderline\AbstractLine as AL;
 use Magento\Quote\Model\Quote\Address\Total as T;
 /**
  * 2019-09-17
- * @see \Dfe\KlarnaC\OL\AheadWorks\CustomerBalance
- * @see \Dfe\KlarnaC\OL\AheadWorks\GiftCard
- * @see \Dfe\KlarnaC\OL\AheadWorks\Reward
+ * @final Unable to use the PHP «final» keyword here because of the M2 code generation.
+ * @used-by etc/klarna.xml
  */
-abstract class OL implements IOL {
+class OL implements IOL {
 	/**
 	 * 2019-09-17
-	 * @used-by fetch()
-	 * @see \Dfe\KlarnaC\OL\AheadWorks\CustomerBalance::id()
-	 * @see \Dfe\KlarnaC\OL\AheadWorks\GiftCard::id()
-	 * @see \Dfe\KlarnaC\OL\AheadWorks\Reward::id()
-	 * @return string
+	 * @param string $id
+	 * @param string $type
 	 */
-	abstract protected function id();
+	final function __construct($id, $type) {$this->_id = $id; $this->_type = $type;}
 
 	/**
 	 * 2019-09-17
@@ -46,6 +42,7 @@ abstract class OL implements IOL {
 
 	/**
 	 * 2019-09-17
+	 * @final Unable to use the PHP «final» keyword here because of the M2 code generation.
 	 * @override
 	 * @see AL::collect()
 	 * @see IOL::collect()
@@ -54,7 +51,7 @@ abstract class OL implements IOL {
 	 */
 	function fetch(IB $b) {
 		$h = df_o(H::class); /** @var H $h */
-		if (($t = dfa($b->getObject()->getTotals(), $this->id())) && ($a = $h->toApiFloat($t->getValue()))) {
+		if (($t = dfa($b->getObject()->getTotals(), $this->_id)) && ($a = $h->toApiFloat($t->getValue()))) {
 			/** @var T|null $t *//** @var int $a */
 			$b->addOrderLine([
 				'name' => $t->getTitle()
@@ -63,7 +60,7 @@ abstract class OL implements IOL {
 				,'tax_rate' => 0
 				,'total_amount' => $a
 				,'total_tax_amount' => 0
-				,'type' => $t->getCode()
+				,'type' => $this->_type
 				,'unit_price' => $a
 			]);
 		}
@@ -98,4 +95,20 @@ abstract class OL implements IOL {
 	 * @var string
 	 */
 	private $_code;
+
+	/**
+	 * 2019-09-17
+	 * @used-by __construct()
+	 * @used-by fetch()
+	 * @var string
+	 */
+	private $_id;
+
+	/**
+	 * 2019-09-17
+	 * @used-by __construct()
+	 * @used-by fetch()
+	 * @var string
+	 */
+	private $_type;
 }
