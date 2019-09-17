@@ -11,7 +11,7 @@
 		,"homepage": "https://mage2.pro/users/dmitry_fedyuk"
 		,"role": "Developer"
 	}]
-	,"require": {"mage2pro/core": ">=5.1.9"}
+	,"require": {"klarna/module-kp": "*", "mage2pro/core": ">=5.1.9"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"Dfe\\KlarnaC\\": ""}}
 	,"keywords": [
 		"eCommerce"
