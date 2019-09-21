@@ -24,4 +24,11 @@
 			>Klarna\Core\Model\Checkout\Orderline\Reward::ITEM_TYPE_REWARD</argument>
 		</arguments>
 	</virtualType>
+	<virtualType name='Dfe\KlarnaC\OL\Amasty\ExtraFee' type='Dfe\KlarnaC\OL'>
+		<arguments>
+			<argument name='id' xsi:type='string'>amasty_extrafee</argument>
+			<argument name='type' xsi:type='const'
+			>Klarna\Core\Model\Checkout\Orderline\Surcharge::ITEM_TYPE_SURCHARGE</argument>
+		</arguments>
+	</virtualType>
 </config>

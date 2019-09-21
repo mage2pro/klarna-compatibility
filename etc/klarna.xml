@@ -7,5 +7,6 @@
 		<line class='Dfe\KlarnaC\OL\AheadWorks\CustomerBalance' id='Dfe\KlarnaC\OL\AheadWorks\CustomerBalance'/>
 		<line class='Dfe\KlarnaC\OL\AheadWorks\GiftCard' id='Dfe\KlarnaC\OL\AheadWorks\GiftCard'/>
 		<line class='Dfe\KlarnaC\OL\AheadWorks\Reward' id='Dfe\KlarnaC\OL\AheadWorks\Reward'/>
+		<line class='Dfe\KlarnaC\OL\Amasty\ExtraFee' id='Dfe\KlarnaC\OL\Amasty\ExtraFee'/>
 	</order_lines>
 </klarna>
