@@ -6,7 +6,7 @@ Currently the module solves compatibility problems with:
 - Amasty [Extra Fee](https://amasty.com/extra-fee-for-magento-2.html)
 
 ## How to install
-[Hire me in Upwork](https://www.upwork.com/fl/mage2pro), and I will: 
+[Hire me in Upwork](https://github.com/dmitrii-fediuk), and I will: 
 - install and configure the module properly on your website
 - answer your questions
 - solve compatiblity problems with third-party checkout, shipping, marketing modules
